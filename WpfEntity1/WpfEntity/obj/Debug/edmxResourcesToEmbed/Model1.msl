@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище moviesModelContainer" CdmEntityContainer="moviesEntities">
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="moviesModel.Genres">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Жанр" ColumnName="Жанр" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="moviesModel.Movies">
+        <MappingFragment StoreEntitySet="Movies">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Год" ColumnName="Год" />
+          <ScalarProperty Name="Жанр" ColumnName="Жанр" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
